@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const { v4: uuidv4 } = require("uuid");
 
-const allNotes = require("./db/db.json");
+const allNotes = require('./db/db.json');
 
 // Sets up the Express app to handle data parsing   
 app.use(express.urlencoded({ extended: true }));
